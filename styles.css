@@ -37,13 +37,13 @@ body {
     place-content: start center;
     grid-template-columns: 1fr;
     row-gap: 1.8rem;
-    padding: 1rem;
+    padding: 1.15rem;
     background-color: var(--blue);
     grid-area: sidebar;
 }
 
 .logo {
-    width: 95%;
+    padding-right: 5%;
 }
 
  .navbar {
@@ -85,12 +85,11 @@ body {
 }
 
 .header {
-    border: 1px solid black;
     grid-area: header;
 }
 
 .main {
-    border: 1px solid black;
+    background: var(--200);
     grid-area: main;
 }
 
