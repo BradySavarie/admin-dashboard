@@ -12,9 +12,9 @@
 --700: #374151;
 --800: #1f2937;
 --900: #111827;
---red: #DB1E35;
---blue: #25A9E0;
---yellow: #FFC21C;
+--red: #f73739;
+--blue: #1992d4;
+--yellow: #f0b429;
 }
 
 * {
@@ -33,16 +33,55 @@ body {
 }
 
 .sidebar {
+    display: grid;
+    place-content: start center;
+    grid-template-columns: 1fr;
+    row-gap: 1.8rem;
+    padding: 1rem;
     background-color: var(--blue);
     grid-area: sidebar;
 }
 
-.menu a {
+.logo {
+    width: 95%;
+}
+
+ .navbar {
+    display: grid;
+    grid-template-columns: min-content auto;
+    gap: 1.8rem .5rem;
+} 
+
+.navbar a, .navbar li {
     text-decoration: none;
     list-style-type: none;
     color: var(--50);
     font-weight: 500;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
+}
+
+.main-icons {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .5rem;
+}
+
+.main-menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .5rem;
+}
+
+.sub-icons {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .5rem;
+}
+
+.sub-menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .5rem;
 }
 
 .header {
