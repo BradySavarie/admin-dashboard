@@ -176,5 +176,62 @@ body {
     box-shadow: 0px 2px 4px var(--300) inset;
     background: var(--200);
     grid-area: main;
+    display: grid;
+    grid-template: min-content 1fr min-content 1fr / 2.75fr 1fr;
+    grid-template-areas: 
+    'cards-header announcements-header'
+    'cards announcements'
+    'cards trending-header'
+    'cards trending';
+    padding: 1.15rem 1rem;
+    gap: .8rem 1.15rem;
+}
+
+.cards-header {
+    font-weight: 500;
+    font-size: 1.15rem;
+    grid-area: cards-header;
+}
+
+.cards {
+    display: grid;
+    grid-area: cards;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    gap: 1.15rem;
+}
+
+.card {
+    display: grid;
+    background-color: var(--50);
+    border-radius: .5rem;
+    box-shadow: 0px 2px 4px var(--300);
+}
+
+.announcements-header {
+    font-weight: 500;
+    font-size: 1.15rem;
+    grid-area: announcements-header;
+}
+
+.announcements {
+    display: grid;
+    grid-area: announcements;
+    background-color: var(--50);
+    border-radius: .5rem;
+    box-shadow: 0px 2px 4px var(--300);
+}
+
+.trending-header {
+    font-weight: 500;
+    font-size: 1.15rem;
+    grid-area: trending-header;
+}
+
+.trending {
+    display: grid;
+    grid-area: trending;
+    background-color: var(--50);
+    border-radius: .5rem;
+    box-shadow: 0px 2px 4px var(--300);
 }
 
