@@ -219,6 +219,8 @@ body {
 }
 
 .card-information {
+    display: grid;
+    gap: .5rem 0;
     grid-area: card-information;
     position: absolute;
     top: .8rem;
