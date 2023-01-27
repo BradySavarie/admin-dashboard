@@ -202,9 +202,47 @@ body {
 
 .card {
     display: grid;
+    grid-template: 1fr min-content / .025fr 1fr;
+    grid-template-areas: 
+    'color-bar card-information'
+    'color-bar card-icons';
     background-color: var(--50);
     border-radius: .5rem;
     box-shadow: 0px 2px 4px var(--300);
+    position: relative;
+}
+
+.color-bar {
+    background-color: var(--yellow);
+    border-radius: .5rem 0 0 .5rem;
+    grid-area: color-bar;
+}
+
+.card-information {
+    grid-area: card-information;
+    position: absolute;
+    top: .8rem;
+    left: .8rem;
+}
+
+.card-icons {
+    grid-area: card-icons;
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    gap: 0 .8rem;
+    justify-content: end;
+    position: absolute;
+    bottom: .8rem;
+    right: .8rem;
+}
+
+.card-header {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.card-text {
+    font-size: .75rem;
 }
 
 .announcements-header {
