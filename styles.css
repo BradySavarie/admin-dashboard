@@ -245,6 +245,7 @@ body {
 
 .card-text {
     font-size: .75rem;
+    color: var(--400);
 }
 
 .announcements-header {
@@ -259,6 +260,23 @@ body {
     background-color: var(--50);
     border-radius: .5rem;
     box-shadow: 0px 2px 4px var(--300);
+    padding: .8rem;
+}
+
+.announcements > h1 {
+    font-weight: 500;
+    font-size: .75rem;
+}
+
+.announcements > p {
+    font-size: .5rem;
+    color: var(--400);
+}
+
+.announcements > hr {
+    border: 0;
+    height: 1px;
+    background: var(--400);
 }
 
 .trending-header {
@@ -269,9 +287,39 @@ body {
 
 .trending {
     display: grid;
+    grid-template: repeat(3, 1fr) / 1fr;
     grid-area: trending;
     background-color: var(--50);
     border-radius: .5rem;
     box-shadow: 0px 2px 4px var(--300);
+    padding: 1rem;
+    align-items: center;
+    gap: .2rem 0;
+}
+
+.trending .friends {
+    display: grid;
+    grid-template: min-content min-content / min-content 1fr;
+    grid-template-areas: 
+    'avatar handle'
+    'avatar username';
+    gap: 0 .8rem;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.trending .avatar {
+    height: 2.9rem;
+    grid-area: avatar;
+}
+
+.trending .handle {
+    display: grid;
+    align-items: center;
+    grid-area: handle;
+}
+
+.trending .username {
+    grid-area: username;
 }
 
