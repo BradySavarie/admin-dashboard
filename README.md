@@ -4,7 +4,7 @@
 
 <img width="900" alt=" Get Wired Studios Dashboard" src="https://user-images.githubusercontent.com/106128212/216232352-bdb7ed9c-333c-4268-8343-f48f2586e37d.png">
 
-<i>This admin dashboard is the final project in the intermediate HTML and CSS section of The Odin Projects full-stack Javascript pathway. It is a static webpage that i've created with the goal of improving my ability to recreate and personalize complex layouts from an existing design reference file.</i>
+<i>This dashboard is the final project in the intermediate HTML and CSS section of The Odin Projects full-stack Javascript pathway. It is a static webpage that i've created with the goal of improving my ability to recreate and personalize complex layouts from an existing design reference file.</i>
 
 Live Link: https://bradysavarie.github.io/admin-dashboard/
 
